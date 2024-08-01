@@ -95,6 +95,9 @@ def main():
     source = "https://mehobega.medium.com/when-will-the-tech-jobs-come-back-a563d5ba45ba"
     result = generate_summary(text)
     print(result)
+    # Save the summary to a text file
+    with open("summary.txt", "w") as file:
+        file.write(result)
 
 if __name__=='__main__':
     main()
