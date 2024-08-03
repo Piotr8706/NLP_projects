@@ -6,11 +6,12 @@ from sklearn.preprocessing import StandardScaler
 class LDA:
     """
     Citing Wikipedia:
-    In natural language processing, latent Dirichlet allocation (LDA) is a Bayesian network 
-    (and, therefore, a generative statistical model) for modeling automatically extracted 
-    topics in textual corpora. The LDA is an example of a Bayesian topic model. In this, 
-    observations (e.g., words) are collected into documents, and each word's presence is attributable 
-    to one of the document's topics. Each document will contain a small number of topics.
+    Linear discriminant analysis (LDA), normal discriminant analysis (NDA), or discriminant 
+    function analysis is a generalization of Fisher's linear discriminant, a method 
+    used in statistics and other fields, to find a linear combination of features that 
+    characterizes or separates two or more classes of objects or events. 
+    The resulting combination may be used as a linear classifier, or, more commonly, 
+    for dimensionality reduction before later classification.
     """
     def __init__(self):
         self.means = None
