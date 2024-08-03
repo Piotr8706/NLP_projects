@@ -4,6 +4,14 @@ from sklearn.datasets import load_iris
 from sklearn.preprocessing import StandardScaler
 
 class LDA:
+    """
+    Citing Wikipedia:
+    In natural language processing, latent Dirichlet allocation (LDA) is a Bayesian network 
+    (and, therefore, a generative statistical model) for modeling automatically extracted 
+    topics in textual corpora. The LDA is an example of a Bayesian topic model. In this, 
+    observations (e.g., words) are collected into documents, and each word's presence is attributable 
+    to one of the document's topics. Each document will contain a small number of topics.
+    """
     def __init__(self):
         self.means = None
         self.cov_matrix = None
@@ -45,7 +53,12 @@ class LDA:
         return X.dot(self.weights)
     
 def main():
-    # Load example data
+    """
+    The Iris dataset consists of 150 samples of iris flowers from three different species 
+    (Iris setosa, Iris versicolor, and Iris virginica). 
+    Each sample has four features: Sepal length (cm), Sepal width (cm), Petal length (cm) and 
+    Petal width (cm)
+    """
     iris = load_iris()
     X = iris.data
     y = iris.target
